@@ -16,7 +16,9 @@ new Typed("#typing", {
 
         "MySQL & MongoDB Developer",
 
-        "Turning Ideas Into Software"
+        "Turning Ideas Into Software",
+
+        "Laravel Developer"
 
     ],
 
