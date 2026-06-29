@@ -1850,3 +1850,15 @@ footer p{
 
     transition:.3s;
 }
+
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 6px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover{
+    color: #00d4ff;
+    text-decoration: underline;
+}
