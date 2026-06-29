@@ -1850,3 +1850,214 @@ footer p{
 
     transition:.3s;
 }
+
+/*=========================================
+            PROJECTS SECTION
+=========================================*/
+
+.projects-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:30px;
+
+    margin-top:60px;
+
+}
+
+.project-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    background:#111827;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:22px;
+
+    padding:30px;
+
+    overflow:hidden;
+
+    transition:.4s ease;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#38bdf8;
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.45),
+
+    0 0 20px rgba(56,189,248,.15);
+
+}
+
+/*============================
+        TOP
+============================*/
+
+.project-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.project-icon{
+
+    width:62px;
+
+    height:62px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:28px;
+
+    color:#fff;
+
+}
+
+/*============== ICON COLORS ==============*/
+
+.banking{
+
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+
+}
+
+.student{
+
+    background:linear-gradient(135deg,#8b5cf6,#6366f1);
+
+}
+
+.dental{
+
+    background:linear-gradient(135deg,#06b6d4,#0ea5e9);
+
+}
+
+.travel{
+
+    background:linear-gradient(135deg,#ec4899,#8b5cf6);
+
+}
+
+.project-type{
+
+    font-size:13px;
+
+    padding:8px 16px;
+
+    border-radius:30px;
+
+    background:rgba(56,189,248,.08);
+
+    color:#38bdf8;
+
+    border:1px solid rgba(56,189,248,.18);
+
+}
+
+/*============================
+      TITLE
+============================*/
+
+.project-card h3{
+
+    font-size:28px;
+
+    color:#fff;
+
+    margin-bottom:18px;
+
+    line-height:1.3;
+
+}
+
+.project-card p{
+
+    color:#9ca3af;
+
+    line-height:1.8;
+
+    font-size:15px;
+
+    margin-bottom:24px;
+
+}
+
+/*============================
+      FEATURES
+============================*/
+
+.project-features{
+
+    list-style:none;
+
+    padding:0;
+
+    margin:0 0 25px;
+
+}
+
+.project-features li{
+
+    color:#d1d5db;
+
+    margin-bottom:12px;
+
+    padding-left:22px;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+.project-features li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:#38bdf8;
+
+    font-weight:700;
+
+}
+
+.project-features li:hover{
+
+    transform:translateX(5px);
+
+    color:#fff;
+
+}
+
