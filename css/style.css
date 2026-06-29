@@ -1863,257 +1863,249 @@ footer p{
     text-decoration: underline;
 }
 
-/*=========================================
-        PROJECTS SECTION
-=========================================*/
+/*==================================================
+                PROJECTS SECTION
+==================================================*/
 
-.projects-grid{
+.projects-container{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(420px,1fr));
 
     gap:35px;
+
+    margin-top:60px;
 
 }
 
 .project-card{
 
-    position:relative;
-
     background:#111827;
 
     border:1px solid rgba(255,255,255,.08);
 
-    border-radius:24px;
+    border-radius:22px;
 
     overflow:hidden;
 
-    transition:.4s;
+    transition:.45s;
 
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
+    position:relative;
 
 }
 
 .project-card:hover{
 
-    transform:translateY(-12px);
+    transform:translateY(-10px);
 
     border-color:#38bdf8;
 
     box-shadow:
-        0 20px 40px rgba(0,0,0,.35),
-        0 0 25px rgba(56,189,248,.12);
+    0 15px 40px rgba(0,0,0,.45),
+    0 0 30px rgba(56,189,248,.15);
 
 }
 
-.project-banner{
+/*=========================
+      APP PREVIEW
+==========================*/
 
-    height:160px;
+.project-preview{
+
+    height:210px;
+
+    padding:22px;
+
+    position:relative;
+
+}
+
+.window-top{
 
     display:flex;
 
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:24px;
-
-    font-weight:700;
-
-    letter-spacing:1px;
-
-    color:#fff;
-
-}
-
-/*============================
-    Banner Colors
-=============================*/
-
-.bank-banner{
-
-    background:linear-gradient(135deg,#2563eb,#06b6d4);
-
-}
-
-.student-banner{
-
-    background:linear-gradient(135deg,#7c3aed,#4f46e5);
-
-}
-
-.dental-banner{
-
-    background:linear-gradient(135deg,#0891b2,#06b6d4);
-
-}
-
-.travel-banner{
-
-    background:linear-gradient(135deg,#ec4899,#8b5cf6);
-
-}
-
-.project-content{
-
-    padding:30px;
-
-}
-
-.project-status{
-
-    display:inline-flex;
-
-    align-items:center;
-
-    gap:8px;
-
-    padding:7px 14px;
-
-    border-radius:50px;
-
-    background:rgba(34,197,94,.12);
-
-    color:#22c55e;
-
-    font-size:13px;
-
-    font-weight:600;
-
-    margin-bottom:20px;
-
-}
-
-.status-dot{
-
-    width:10px;
-
-    height:10px;
-
-    border-radius:50%;
-
-    background:#22c55e;
-
-}
-
-.project-card h3{
-
-    font-size:25px;
-
-    margin-bottom:18px;
-
-    color:#fff;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-}
-
-.project-card h3 i{
-
-    color:#38bdf8;
-
-}
-
-.project-card>p{
-
-    color:#94a3b8;
-
-    line-height:1.8;
-
-    margin-bottom:25px;
-
-}
-
-.project-features{
-
-    display:grid;
-
-    gap:12px;
+    gap:10px;
 
     margin-bottom:28px;
 
 }
 
-.project-features p{
+.window-top span{
 
-    margin:0;
+    width:13px;
 
-    color:#d1d5db;
+    height:13px;
 
-    font-size:15px;
-
-    display:flex;
-
-    align-items:center;
-
-    gap:10px;
+    border-radius:50%;
 
 }
 
-.project-features p:hover{
+.window-top span:nth-child(1){
+
+    background:#ff5f57;
+
+}
+
+.window-top span:nth-child(2){
+
+    background:#febc2e;
+
+}
+
+.window-top span:nth-child(3){
+
+    background:#28c840;
+
+}
+
+/*=========================
+      WINDOW BODY
+==========================*/
+
+.window-body h4{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:28px;
+
+    font-weight:700;
+
+}
+
+.mini-boxes{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+}
+
+.mini-boxes div{
+
+    padding:14px;
+
+    background:rgba(255,255,255,.10);
+
+    border-radius:12px;
+
+    text-align:center;
+
+    color:white;
+
+    font-size:14px;
+
+    backdrop-filter:blur(8px);
+
+}
+
+/*=========================
+       CARD BODY
+==========================*/
+
+.project-body{
+
+    padding:35px;
+
+}
+
+.project-category{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:50px;
+
+    background:rgba(56,189,248,.12);
 
     color:#38bdf8;
 
-    transform:translateX(6px);
+    font-size:13px;
 
-    transition:.3s;
+    font-weight:600;
+
+    margin-bottom:18px;
 
 }
 
-/*============================
-     TECH STACK
-=============================*/
+.project-body h3{
 
-.tech-badges{
+    color:#fff;
+
+    font-size:30px;
+
+    margin-bottom:18px;
+
+}
+
+.project-body p{
+
+    color:#9ca3af;
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+}
+
+/*=========================
+        TECH STACK
+==========================*/
+
+.project-stack{
 
     display:flex;
 
     flex-wrap:wrap;
 
-    gap:10px;
+    gap:12px;
 
-    margin-bottom:30px;
+    margin-bottom:35px;
 
 }
 
-.tech-badges span{
+.project-stack span{
 
-    padding:8px 14px;
+    padding:9px 18px;
 
     border-radius:50px;
 
-    background:rgba(56,189,248,.10);
+    border:1px solid rgba(56,189,248,.25);
+
+    background:rgba(56,189,248,.08);
 
     color:#38bdf8;
 
-    border:1px solid rgba(56,189,248,.20);
+    font-size:14px;
 
-    font-size:13px;
-
-    font-weight:500;
+    transition:.3s;
 
 }
 
-/*============================
-      BUTTON
-=============================*/
+.project-stack span:hover{
 
-.project-links{
+    background:#38bdf8;
+
+    color:#fff;
+
+}
+
+/*=========================
+        BUTTON
+==========================*/
+
+.project-footer{
 
     margin-top:auto;
 
 }
 
-.project-btn{
+.project-footer a{
 
     display:flex;
 
@@ -2121,9 +2113,13 @@ footer p{
 
     align-items:center;
 
-    gap:10px;
+    gap:12px;
 
-    width:100%;
+    text-decoration:none;
+
+    color:white;
+
+    font-weight:600;
 
     padding:15px;
 
@@ -2131,26 +2127,282 @@ footer p{
 
     background:linear-gradient(135deg,#2563eb,#38bdf8);
 
-    color:#fff;
+    transition:.35s;
 
-    text-decoration:none;
+}
 
-    font-weight:600;
+.project-footer a:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:0 12px 30px rgba(56,189,248,.35);
+
+}
+
+/*==================================================
+            PREMIUM PROJECT STYLING
+==================================================*/
+
+/* Animated Gradient Backgrounds */
+
+.banking{
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+}
+
+.student{
+    background:linear-gradient(135deg,#7c3aed,#4f46e5);
+}
+
+.dental{
+    background:linear-gradient(135deg,#0891b2,#06b6d4);
+}
+
+.travel{
+    background:linear-gradient(135deg,#ec4899,#8b5cf6);
+}
+
+/* Shine Effect */
+
+.project-preview{
+
+    overflow:hidden;
+
+}
+
+.project-preview::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:350px;
+
+    background:rgba(255,255,255,.18);
+
+    transform:rotate(25deg);
+
+    top:-120px;
+
+    left:-180px;
+
+    transition:.8s;
+
+}
+
+.project-card:hover .project-preview::before{
+
+    left:130%;
+
+}
+
+/* Floating Boxes */
+
+.mini-boxes div{
 
     transition:.35s;
 
 }
 
-.project-btn:hover{
+.project-card:hover .mini-boxes div{
 
-    transform:translateY(-4px);
+    transform:translateY(-5px);
 
-    box-shadow:0 15px 30px rgba(56,189,248,.30);
+    background:rgba(255,255,255,.18);
 
 }
 
-.project-btn i{
+/* Window Title */
 
-    font-size:18px;
+.window-body h4{
+
+    letter-spacing:.5px;
+
+}
+
+/* Tech Badges */
+
+.project-stack span{
+
+    cursor:default;
+
+    backdrop-filter:blur(10px);
+
+}
+
+/* Better Button */
+
+.project-footer a{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-footer a::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    background:rgba(255,255,255,.15);
+
+    transition:.45s;
+
+}
+
+.project-footer a:hover::before{
+
+    width:100%;
+
+}
+
+/* Card Glow */
+
+.project-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:22px;
+
+    padding:1px;
+
+    background:linear-gradient(135deg,
+
+    transparent,
+
+    rgba(56,189,248,.35),
+
+    transparent);
+
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+
+    -webkit-mask-composite:xor;
+
+    mask-composite:exclude;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.project-card:hover::after{
+
+    opacity:1;
+
+}
+
+/* Floating Animation */
+
+.project-card{
+
+    animation:floatCard 6s ease-in-out infinite;
+
+}
+
+.project-card:nth-child(2){
+
+    animation-delay:.4s;
+
+}
+
+.project-card:nth-child(3){
+
+    animation-delay:.8s;
+
+}
+
+.project-card:nth-child(4){
+
+    animation-delay:1.2s;
+
+}
+
+@keyframes floatCard{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-6px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* Section Title */
+
+.section-header h2{
+
+    font-size:52px;
+
+    font-weight:800;
+
+}
+
+.section-header p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    color:#94a3b8;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.projects-container{
+
+grid-template-columns:1fr;
+
+}
+
+.project-body{
+
+padding:28px;
+
+}
+
+.project-body h3{
+
+font-size:26px;
+
+}
+
+.project-preview{
+
+height:180px;
+
+}
 
 }
