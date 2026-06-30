@@ -1944,27 +1944,23 @@ footer p{
 /*============== ICON COLORS ==============*/
 
 .banking{
-
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
-
+    background: linear-gradient(135deg,#2563eb,#38bdf8);
 }
 
 .student{
-
-    background:linear-gradient(135deg,#8b5cf6,#6366f1);
-
+    background: linear-gradient(135deg,#8b5cf6,#6366f1);
 }
 
 .dental{
-
-    background:linear-gradient(135deg,#06b6d4,#0ea5e9);
-
+    background: linear-gradient(135deg,#06b6d4,#0ea5e9);
 }
 
 .travel{
+    background: linear-gradient(135deg,#ec4899,#8b5cf6);
+}
 
-    background:linear-gradient(135deg,#ec4899,#8b5cf6);
-
+.expense{
+    background: linear-gradient(135deg,#22c55e,#16a34a);
 }
 
 .project-type{
