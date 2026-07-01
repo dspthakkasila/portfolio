@@ -1963,6 +1963,10 @@ footer p{
     background: linear-gradient(135deg,#22c55e,#16a34a);
 }
 
+.career{
+    background: linear-gradient(135deg,#0ea5e9,#2563eb);
+}
+
 .project-type{
 
     font-size:13px;
