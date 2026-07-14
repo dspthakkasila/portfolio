@@ -1477,30 +1477,21 @@ footer p {
 
 .stat-card {
 
-    background: #111827;
-
+    background: linear-gradient(145deg, rgba(17, 24, 39, .95), rgba(15, 23, 42, .88));
     border: 1px solid rgba(255, 255, 255, .08);
-
     border-radius: 24px;
-
     padding: 35px;
-
     text-align: center;
-
+    box-shadow: 0 12px 28px rgba(2, 8, 23, .2);
     transition: .4s;
-
     cursor: pointer;
 }
 
 .stat-card:hover {
 
     transform: translateY(-10px);
-
     border-color: #38bdf8;
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, .3),
-        0 0 25px rgba(56, 189, 248, .15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .3), 0 0 25px rgba(56, 189, 248, .12);
 }
 
 .stat-card h3 {
@@ -1740,39 +1731,23 @@ footer p {
 .project-card {
 
     position: relative;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: space-between;
-
-    background: #111827;
-
+    background: linear-gradient(145deg, rgba(17, 24, 39, .95), rgba(15, 23, 42, .88));
     border: 1px solid rgba(255, 255, 255, .08);
-
     border-radius: 22px;
-
     padding: 30px;
-
     overflow: hidden;
-
+    box-shadow: 0 16px 35px rgba(2, 8, 23, .22);
     transition: .4s ease;
-
 }
 
 .project-card:hover {
 
     transform: translateY(-10px);
-
     border-color: #38bdf8;
-
-    box-shadow:
-
-        0 15px 40px rgba(0, 0, 0, .45),
-
-        0 0 20px rgba(56, 189, 248, .15);
-
+    box-shadow: 0 20px 40px rgba(0, 0, 0, .35), 0 0 25px rgba(56, 189, 248, .10);
 }
 
 /*============================
@@ -1947,44 +1922,27 @@ footer p {
 .github-btn {
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
-
     gap: 12px;
-
     width: 100%;
-
     padding: 15px 20px;
-
     border-radius: 14px;
-
     background: linear-gradient(135deg, #2563eb, #38bdf8);
-
     color: #fff;
-
     text-decoration: none;
-
     font-size: 15px;
-
     font-weight: 600;
-
+    box-shadow: 0 12px 30px rgba(37, 99, 235, .18);
     transition: .35s ease;
-
     overflow: hidden;
-
     position: relative;
-
 }
 
 .github-btn:hover {
 
     transform: translateY(-4px);
-
-    box-shadow:
-        0 12px 30px rgba(37, 99, 235, .35);
-
+    box-shadow: 0 14px 35px rgba(37, 99, 235, .28);
 }
 
 .github-btn i {
